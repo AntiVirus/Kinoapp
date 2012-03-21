@@ -24,6 +24,8 @@ display: block;
 
 form input { background:#00AEEF; color:#FFF; margin:5px; padding:10px; font-weight:bold; border:1px solid #FFF; border-radius: 15px;}
 
+select { background:#00AEEF; color:#FFF; margin:5px; padding:10px; font-weight:bold; border:1px solid #FFF; border-radius: 15px;}
+
 #menu {  margin-right:30px; margin-top:20px;width:300px; border-radius: 15px; border:1px solid #EEE; border-bottom:3px solid #DADADA; width:99%; }
 #menu ul {margin:10px; }
 #menu li { display:inline; }
@@ -48,4 +50,4 @@ form input { background:#00AEEF; color:#FFF; margin:5px; padding:10px; font-weig
 #hotelopis { display:block; float:none; }
 #hotelkomentarze { display:block; float:none; }
 
-h1 {background:#FFF; color:#66CC33; text-shadow: 1px 1px 0px #777, -1px -1px 0px #CCC, 0px 0px 20px #555;  font-size:40px; text-align:center; padding:20px;}
+h1 {background:#FFF; color:#66CC33; text-shadow: 1px 1px 0px #777, -1px -1px 0px #CCC, 0px 0px 20px #555;  font-size:20px; text-align:center; padding:20px;}

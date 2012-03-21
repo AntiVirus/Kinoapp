@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Pracowniks',
+	'Pracownik',
 );
 
 $this->menu=array(
-	array('label'=>'Create Pracownik', 'url'=>array('create')),
-	array('label'=>'Manage Pracownik', 'url'=>array('admin')),
+	array('label'=>'Utwórz Pracownik', 'url'=>array('create')),
+	array('label'=>'Zarządzaj Pracownik', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Pracowniks</h1>
+<h1>Pracownik</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

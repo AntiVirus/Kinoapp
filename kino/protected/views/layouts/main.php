@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="robots" content="all" />
 	<meta name="description" content="" /> 
 	<meta name="keywords" content="" /> 
@@ -20,7 +20,7 @@
 			</div>
 			<div id="menulogin"><center>
 				<ul>
-					<li><a href="index.php">Strona główna</a></li>
+					<li><a href="index.php">Strona gĹĂłwna</a></li>
 					<li><a href="index.php">Repertuar</a></li>
 					<li><a href="index.php">Ceny</a></li>
 					<li><a href="index.php">Kontakt</a></li>

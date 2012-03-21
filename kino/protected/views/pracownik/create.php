@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Pracowniks'=>array('index'),
-	'Create',
+	'Pracownik'=>array('index'),
+	'Utwórz',
 );
 
 $this->menu=array(
-	array('label'=>'List Pracownik', 'url'=>array('index')),
-	array('label'=>'Manage Pracownik', 'url'=>array('admin')),
+	array('label'=>'Lista Pracownik', 'url'=>array('index')),
+	array('label'=>'Zarządzaj Pracownik', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Pracownik</h1>
+<h1>Utwórz Pracownik</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

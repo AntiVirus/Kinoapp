@@ -1,11 +1,11 @@
-<div class="form">
+﻿<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'pracownik-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Pola oznaczone <span class="required">*</span> są wymagane.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -23,8 +23,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'stanowisko'); ?>
-		<?php $cats=array('Kasjer' => 'Kasjer', 'Kierownik'=>'Kierownik'); ?>
-		<?php echo CHtml::activeListBox($model, 'stanowisko', $cats, array('empty' => '--Select a category--')); ?>
+		<?php echo $form->textField($model,'stanowisko',array('size'=>9,'maxlength'=>9)); ?>
 		<?php echo $form->error($model,'stanowisko'); ?>
 	</div>
 
@@ -41,7 +40,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Utwórz' : 'Zapisz'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

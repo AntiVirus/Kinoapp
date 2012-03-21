@@ -6,3 +6,65 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/kino/index.php?r=gi
 ---
+2012/03/21 12:59:55 [error] [php] Object of class CrudCode could not be converted to string (/home/ztw/domains/lazy1.pl/public_html/framework/gii/generators/crud/templates/default/index.php:9)
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/gii/CCodeGenerator.php(161): CrudCode->prepare()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/gii/CCodeGenerator.php(64): CrudGenerator->prepare()
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): CrudGenerator->actionIndex()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CrudGenerator->runAction()
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CrudGenerator->runActionWithFilters()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CrudGenerator->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CWebApplication->run()
+REQUEST_URI=/kino/index.php?r=gii/crud
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/21 13:01:03 [error] [php] Object of class CrudCode could not be converted to string (/home/ztw/domains/lazy1.pl/public_html/framework/gii/generators/crud/templates/default/view.php:10)
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/gii/CCodeGenerator.php(161): CrudCode->prepare()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/gii/CCodeGenerator.php(64): CrudGenerator->prepare()
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): CrudGenerator->actionIndex()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CrudGenerator->runAction()
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CrudGenerator->runActionWithFilters()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CrudGenerator->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CWebApplication->run()
+REQUEST_URI=/kino/index.php?r=gii/crud
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/21 13:07:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php:337
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('update')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/updat...')
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/update
+---
+2012/03/21 13:34:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php:337
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('view')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/view')
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/kino/?r=pracownik/view
+---

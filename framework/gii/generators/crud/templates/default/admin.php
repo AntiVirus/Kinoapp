@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The following variables are available in this template:
  * - $this: the CrudCode object
@@ -6,7 +6,7 @@
 ?>
 <?php
 echo "<?php\n";
-$label=$this->pluralize($this->class2name($this->modelClass));
+$label=$this->class2name($this->modelClass) ;
 echo "\$this->breadcrumbs=array(
 	'$label'=>array('index'),
 	'Manage',
@@ -14,8 +14,8 @@ echo "\$this->breadcrumbs=array(
 ?>
 
 $this->menu=array(
-	array('label'=>'List <?php echo $this->modelClass; ?>', 'url'=>array('index')),
-	array('label'=>'Create <?php echo $this->modelClass; ?>', 'url'=>array('create')),
+	array('label'=>'Lista <?php echo $this->modelClass; ?>', 'url'=>array('index')),
+	array('label'=>'Utwórz <?php echo $this->modelClass; ?>', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -32,14 +32,14 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage <?php echo $this->pluralize($this->class2name($this->modelClass)); ?></h1>
+<h1>Zarządzaj <?php echo $this->class2name($this->modelClass); ?></h1>
 
 <p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+Opcjonalnie możesz wprowadzić operator porównania (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+lub <b>=</b>) na początku każdej wyszukiwanej wartości, aby wyspecyfikować jak powinno być wykonane porównanie.
 </p>
 
-<?php echo "<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>"; ?>
+<?php echo "<?php echo CHtml::link('Wyszukiwanie zaawansowane','#',array('class'=>'search-button')); ?>"; ?>
 
 <div class="search-form" style="display:none">
 <?php echo "<?php \$this->renderPartial('_search',array(

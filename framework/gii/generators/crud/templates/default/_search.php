@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The following variables are available in this template:
  * - $this: the CrudCode object
@@ -24,7 +24,7 @@
 
 <?php endforeach; ?>
 	<div class="row buttons">
-		<?php echo "<?php echo CHtml::submitButton('Search'); ?>\n"; ?>
+		<?php echo "<?php echo CHtml::submitButton('Szukaj'); ?>\n"; ?>
 	</div>
 
 <?php echo "<?php \$this->endWidget(); ?>\n"; ?>
