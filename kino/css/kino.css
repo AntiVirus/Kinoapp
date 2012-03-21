@@ -1,0 +1,51 @@
+body { text-shadow: 1px 1px 0px #DDD;	font-family: Tahoma, serif; font-size:12px; width:100%; height:100%; background:#FFF; color:#515151; line-height:15px; background:url('../images/tlo.jpg') repeat-x;}
+
+a { color:#00AEEF; text-decoration:none;  text-decoration:none;  }
+a:hover { text-decoration:underline; }
+
+strong { font-weight:bold; }
+
+#komentarz {
+text-align:center;
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kontenerek { width:960px; height:100%; margin-left:auto; margin-right:auto; padding-top:20px; overflow:hidden; }
+
+#gora { text-align:center; padding-top:20px; padding-bottom:20px; margin-right:20px; margin-top:0px}
+
+#bokslogin { text-align:center;  float:right; padding-top:20px; padding-bottom:20px; margin-right:30px; margin-top:20px;width:300px;  border-radius: 15px; border:1px solid #EEE; border-bottom:3px solid #DADADA; }
+
+#infoboks { text-align:center; padding-top:20px; padding-bottom:20px; margin-right:auto; margin-left:auto; margin-top:20px;width:300px; border-radius: 15px; border:1px solid #EEE; border-bottom:3px solid #DADADA; }
+
+#komentarzboks { text-align:center; padding-top:20px; padding-bottom:20px; margin-right:auto; margin-left:auto; margin-top:20px;width:500px; border-radius: 15px; border:1px solid #EEE; border-bottom:3px solid #DADADA; }
+
+form input { background:#00AEEF; color:#FFF; margin:5px; padding:10px; font-weight:bold; border:1px solid #FFF; border-radius: 15px;}
+
+#menu {  margin-right:30px; margin-top:20px;width:300px; border-radius: 15px; border:1px solid #EEE; border-bottom:3px solid #DADADA; width:99%; }
+#menu ul {margin:10px; }
+#menu li { display:inline; }
+#menu li a { margin-left:15px; font-weight:bold; padding:10px;text-shadow: 1px 1px 0px #DDD;}
+#menu li a:hover {background:#00AEEF; color:#FFF; text-decoration:none; text-shadow:none;}
+
+#menulogin {  margin-right:30px; margin-top:10px;width:300px;  border-radius: 15px; border:1px solid #EEE; border-bottom:3px solid #DADADA; width:99%; }
+#menulogin ul {margin:10px; }
+#menulogin li { display:inline; }
+#menulogin li a { margin-left:15px; font-weight:bold; padding:10px;text-shadow: 1px 1px 0px #DDD;}
+#menulogin li a:hover {background:#00AEEF; color:#FFF; text-decoration:none; text-shadow:none;}
+
+#sciezka { font-size:20px; padding:20px;}
+#sciezka span { font-size:0.9em; }
+
+#tresc{ padding-top:30px; padding-bottom:30px;font-family:Times New Roman; }
+#tresc p { display:block; margin-bottom:20px; }
+#tresc p img { border-radius: 15px; margin:10px;} 
+
+#stopka { border-radius: 15px; background:#00AEEF; color:#FFF; padding:20px; text-align:center;  text-shadow:none;}
+
+#hotelopis { display:block; float:none; }
+#hotelkomentarze { display:block; float:none; }
+
+h1 {background:#FFF; color:#66CC33; text-shadow: 1px 1px 0px #777, -1px -1px 0px #CCC, 0px 0px 20px #555;  font-size:40px; text-align:center; padding:20px;}

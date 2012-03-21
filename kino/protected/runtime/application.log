@@ -1,0 +1,8 @@
+2012/03/11 11:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gi".' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('gi')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kino/index.php?r=gi
+---

@@ -1,0 +1,10 @@
+1. W default controller template: dla views zmienic by Operations wyswietlaly sie w menubarze
+2. Spolszczyc wszystko
+3. h1 mniejsze
+4. enumy zrobic recznie
+5. Autoryzacja
+6. Statyczna podstrona logowania
+7. Inne statyczne podstrony typu kontakt
+8. Ukryc ID primary przy tworzeniu
+9. Zmodyfikowac modele zeby widzialy powiazane modele
+10. 
