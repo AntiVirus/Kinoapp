@@ -23,9 +23,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'stanowisko'); ?>
-		<?php echo $form->textField($model,'stanowisko',array('size'=>9,'maxlength'=>9)); ?>
-		$cats=array('Kasjer' => 'Kasjer', 'Kierownik'=>'Kierownik')
-		<?php echo $form->activeListBox($model, 'categories', CHtml::listData($cats, 'id', 'categoryName'), array('empty' => '--Select a category--', 'multiple'=>'multiple')); ?>
+		<?php $cats=array('Kasjer' => 'Kasjer', 'Kierownik'=>'Kierownik'); ?>
+		<?php echo CHtml::activeListBox($model, 'stanowisko', $cats, array('empty' => '--Select a category--')); ?>
 		<?php echo $form->error($model,'stanowisko'); ?>
 	</div>
 
