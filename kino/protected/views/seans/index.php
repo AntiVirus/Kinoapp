@@ -1,11 +1,11 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
 	'Seans',
 );
 
 $this->menu=array(
-	array('label'=>'Create Seans', 'url'=>array('create')),
-	array('label'=>'Manage Seans', 'url'=>array('admin')),
+	array('label'=>'Utwórz Seans', 'url'=>array('create')),
+	array('label'=>'Zarządzaj Seans', 'url'=>array('admin')),
 );
 ?>
 

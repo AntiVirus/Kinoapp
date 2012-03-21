@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Widzs'=>array('index'),
-	'Create',
+	'Widz'=>array('index'),
+	'Utwórz',
 );
 
 $this->menu=array(
-	array('label'=>'List Widz', 'url'=>array('index')),
-	array('label'=>'Manage Widz', 'url'=>array('admin')),
+	array('label'=>'Lista Widz', 'url'=>array('index')),
+	array('label'=>'Zarządzaj Widz', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Widz</h1>
+<h1>Utwórz Widz</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

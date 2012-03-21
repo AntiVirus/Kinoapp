@@ -1,4 +1,4 @@
-<div class="wide form">
+﻿<div class="wide form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
@@ -21,7 +21,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Szukaj'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

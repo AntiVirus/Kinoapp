@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Salas'=>array('index'),
-	'Create',
+	'Sala'=>array('index'),
+	'Utwórz',
 );
 
 $this->menu=array(
-	array('label'=>'List Sala', 'url'=>array('index')),
-	array('label'=>'Manage Sala', 'url'=>array('admin')),
+	array('label'=>'Lista Sala', 'url'=>array('index')),
+	array('label'=>'Zarządzaj Sala', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Sala</h1>
+<h1>Utwórz Sala</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
 	'Seans'=>array('index'),
-	'Create',
+	'Utwórz',
 );
 
 $this->menu=array(
-	array('label'=>'List Seans', 'url'=>array('index')),
-	array('label'=>'Manage Seans', 'url'=>array('admin')),
+	array('label'=>'Lista Seans', 'url'=>array('index')),
+	array('label'=>'Zarządzaj Seans', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Seans</h1>
+<h1>Utwórz Seans</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

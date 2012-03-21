@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Bilets'=>array('index'),
-	'Create',
+	'Bilet'=>array('index'),
+	'Utwórz',
 );
 
 $this->menu=array(
-	array('label'=>'List Bilet', 'url'=>array('index')),
-	array('label'=>'Manage Bilet', 'url'=>array('admin')),
+	array('label'=>'Lista Bilet', 'url'=>array('index')),
+	array('label'=>'Zarządzaj Bilet', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Bilet</h1>
+<h1>Utwórz Bilet</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

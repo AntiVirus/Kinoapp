@@ -1,11 +1,11 @@
-<div class="form">
+﻿<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'widz-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Pola oznaczone <span class="required">*</span> są wymagane.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -34,7 +34,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Utwórz' : 'Zapisz'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Bilets',
+	'Bilet',
 );
 
 $this->menu=array(
-	array('label'=>'Create Bilet', 'url'=>array('create')),
-	array('label'=>'Manage Bilet', 'url'=>array('admin')),
+	array('label'=>'Utwórz Bilet', 'url'=>array('create')),
+	array('label'=>'Zarządzaj Bilet', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Bilets</h1>
+<h1>Bilet</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

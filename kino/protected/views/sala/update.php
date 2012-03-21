@@ -1,18 +1,18 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Salas'=>array('index'),
+	'Sala'=>array('index'),
 	$model->idSali=>array('view','id'=>$model->idSali),
-	'Update',
+	'Edytuj',
 );
 
 $this->menu=array(
-	array('label'=>'List Sala', 'url'=>array('index')),
-	array('label'=>'Create Sala', 'url'=>array('create')),
-	array('label'=>'View Sala', 'url'=>array('view', 'id'=>$model->idSali)),
-	array('label'=>'Manage Sala', 'url'=>array('admin')),
+	array('label'=>'Lista Sala', 'url'=>array('index')),
+	array('label'=>'Utwórz Sala', 'url'=>array('create')),
+	array('label'=>'Zobacz Sala', 'url'=>array('view', 'id'=>$model->idSali)),
+	array('label'=>'Zarządzaj Sala', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Sala <?php echo $model->idSali; ?></h1>
+<h1>Edytuj Sala <?php echo $model->idSali; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

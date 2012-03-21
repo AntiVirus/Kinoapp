@@ -1,4 +1,4 @@
-<div class="view">
+﻿<div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idSeansu')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->idSeansu), array('view', 'id'=>$data->idSeansu)); ?>

@@ -1,15 +1,15 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Films',
+	'Film',
 );
 
 $this->menu=array(
-	array('label'=>'Create Film', 'url'=>array('create')),
-	array('label'=>'Manage Film', 'url'=>array('admin')),
+	array('label'=>'Utwórz Film', 'url'=>array('create')),
+	array('label'=>'Zarządzaj Film', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Films</h1>
+<h1>Film</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

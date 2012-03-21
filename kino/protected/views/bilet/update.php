@@ -1,18 +1,18 @@
-<?php
+﻿<?php
 $this->breadcrumbs=array(
-	'Bilets'=>array('index'),
+	'Bilet'=>array('index'),
 	$model->idBiletu=>array('view','id'=>$model->idBiletu),
-	'Update',
+	'Edytuj',
 );
 
 $this->menu=array(
-	array('label'=>'List Bilet', 'url'=>array('index')),
-	array('label'=>'Create Bilet', 'url'=>array('create')),
-	array('label'=>'View Bilet', 'url'=>array('view', 'id'=>$model->idBiletu)),
-	array('label'=>'Manage Bilet', 'url'=>array('admin')),
+	array('label'=>'Lista Bilet', 'url'=>array('index')),
+	array('label'=>'Utwórz Bilet', 'url'=>array('create')),
+	array('label'=>'Zobacz Bilet', 'url'=>array('view', 'id'=>$model->idBiletu)),
+	array('label'=>'Zarządzaj Bilet', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Bilet <?php echo $model->idBiletu; ?></h1>
+<h1>Edytuj Bilet <?php echo $model->idBiletu; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
