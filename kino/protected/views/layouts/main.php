@@ -1,3 +1,8 @@
+<?
+if($_GET['logout']==1){
+Yii::app()->user->logout();
+}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,7 +29,11 @@
 					<li><a href="index.php">Repertuar</a></li>
 					<li><a href="index.php">Ceny</a></li>
 					<li><a href="index.php">Kontakt</a></li>
-					<li><a href="index.php?page=rejestracja">Rejestracja</a></li>
+					<?php 
+					if(!Yii::app()->user->isGuest){
+						echo '<li><a href="index.php?logout=1">Logout</a></li>';
+					} 
+					?>
 				</ul></center>
 			</div>
 			<?

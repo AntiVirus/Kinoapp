@@ -20,9 +20,6 @@
 	<?php echo CHtml::encode($data->login); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('haslo')); ?>:</b>
-	<?php echo CHtml::encode($data->haslo); ?>
-	<br />
 
 
 </div>

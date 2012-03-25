@@ -523,3 +523,190 @@ Stack trace:
 REQUEST_URI=/kino/index.php?r=gii/crud
 HTTP_REFERER=http://www.lazy1.pl/kino/index.php?r=gii/crud
 ---
+2012/03/25 10:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pracownicy".' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownicy')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kino/?r=pracownicy
+---
+2012/03/25 10:50:58 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.login" is not defined.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/kino/protected/components/UserIdentity.php(20): CComponent->__get('login')
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('login')
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/kino/index.php?r=site/login
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 10:57:53 [error] [exception.CException] exception 'CException' with message 'Property "Pracownik.password" is not defined.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('password', Array)
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(76): CActiveRecord->__set('password', Array)
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 10:57:54 [error] [exception.CException] exception 'CException' with message 'Property "Pracownik.password" is not defined.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('password', Array)
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(76): CActiveRecord->__set('password', Array)
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 10:57:58 [error] [exception.CException] exception 'CException' with message 'Property "Pracownik.password" is not defined.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('password', Array)
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(76): CActiveRecord->__set('password', Array)
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 10:58:09 [error] [exception.CException] exception 'CException' with message 'Property "Pracownik.password" is not defined.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('password', Array)
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(76): CActiveRecord->__set('password', Array)
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 10:58:11 [error] [exception.CException] exception 'CException' with message 'Property "Pracownik.password" is not defined.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('password', Array)
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(76): CActiveRecord->__set('password', Array)
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 10:58:11 [error] [exception.CException] exception 'CException' with message 'Property "Pracownik.password" is not defined.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(160): CComponent->__set('password', Array)
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(76): CActiveRecord->__set('password', Array)
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 10:59:07 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/home/ztw/domains/lazy1.pl/public_html/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/helpers/CHtml.php(140): renderAttributes()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/helpers/CHtml.php(1777): tag()
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/helpers/CHtml.php(1205): activeInputField()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/widgets/CActiveForm.php(575): activeTextField()
+#4 /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/pracownik/_form.php(38): CActiveForm->textField()
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(127): require()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(96): PracownikController->renderInternal()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(870): PracownikController->renderFile()
+#8 /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/pracownik/create.php(15): PracownikController->renderPartial()
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(127): require()
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(96): PracownikController->renderInternal()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(870): PracownikController->renderFile()
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(783): PracownikController->renderPartial()
+#13 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(82): PracownikController->render()
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#15 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#16 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): PracownikController->runAction()
+#17 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#19 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): PracownikController->filterAccessControl()
+#20 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#22 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): PracownikController->runActionWithFilters()
+#23 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): PracownikController->run()
+#24 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#25 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CWebApplication->run()
+REQUEST_URI=/kino/index.php?r=pracownik/create
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/pracownik/_form.php (38)
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/pracownik/create.php (15)
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (82)

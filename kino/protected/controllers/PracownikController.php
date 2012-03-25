@@ -69,8 +69,12 @@ class PracownikController extends Controller
 		if(isset($_POST['Pracownik']))
 		{
 			$model->attributes=$_POST['Pracownik'];
-			if($model->save())
+			$model->haslo = $model->hashPassword($_POST['Pracownik']['haslo'], $_POST['Pracownik']['login']);
+			if($model->save()) {
 				$this->redirect(array('view','id'=>$model->idPracownika));
+			} else {
+				  $model->haslo = $_POST['Pracownik']['haslo'];
+			}
 		}
 
 		$this->render('create',array(

@@ -43,7 +43,8 @@ class Pracownik extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('imie, nazwisko, stanowisko, login, haslo', 'required'),
-			array('imie, login, haslo', 'length', 'max'=>30),
+			array('imie', 'length', 'max'=>30),
+			array('login, haslo', 'length', 'max'=>128),
 			array('nazwisko', 'length', 'max'=>40),
 			array('stanowisko', 'length', 'max'=>9),
 			// The following rule is used by search().
@@ -101,4 +102,26 @@ class Pracownik extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	
+/**
+ * @return boolean validate user
+ */
+	public function validatePassword($haslo, $login){
+        return $this->hashPassword($haslo, $login) === $this->haslo;
+	}
+/**
+ * @return hashed value
+ */
+	public function hashPassword($phrase, $salt = null){
+		DEFINE('SALT_LENGTH', 10);
+        $key = 'Gf;B&yXL|beJUf-K*PPiU{wf|@9K9j5?d+YW}?VAZOS%e2c -:11ii<}ZM?PO!96';
+        if($salt == '')
+                $salt = substr(hash('sha512', $key), 0, SALT_LENGTH);
+        else
+                $salt = substr($salt, 0, SALT_LENGTH);
+        return hash('sha512', $salt . $key . $phrase);
+	}
+	
+	
 }
