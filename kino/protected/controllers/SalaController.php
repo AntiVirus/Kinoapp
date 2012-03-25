@@ -30,9 +30,9 @@ class SalaController extends Controller
 				'users'=>array('?'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'users'=>array('antivirus','koral'),
+				'expression'=>'$user->stanowisko=="Kierownik"',
 			),
-			array('allow', // zalogowany moze przegladac sale
+			array('allow', // kasjer moze przegladac sale
 				'actions'=>array('view','index'),
 				'users'=>array('@'),
 			),

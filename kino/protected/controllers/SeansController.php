@@ -31,9 +31,9 @@ class SeansController extends Controller
 				'users'=>array('?'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'users'=>array('antivirus','koral'),
+				'expression'=>'$user->stanowisko=="Kierownik"',
 			),
-			array('allow', // zalogowany moze przegladac seanse
+			array('allow', // kasjer moze przegladac seanse
 				'actions'=>array('view','index'),
 				'users'=>array('@'),
 			),

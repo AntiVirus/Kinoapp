@@ -1306,3 +1306,28 @@ Stack trace:
 REQUEST_URI=/kino/index.php?r=pracownik/create
 HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
 ---
+2012/03/25 20:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Nie można rozszyfrować żądania "about".' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('about')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kino/index.php?r=about
+---
+2012/03/25 20:58:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Nie jesteś upoważniony do wykonania tej akcji.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'Nie jeste?? upo...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('film/admin')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=film/admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=film
+---

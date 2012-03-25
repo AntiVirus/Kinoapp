@@ -29,12 +29,12 @@ class BiletController extends Controller
 			array('deny',  // anonimowy nie moze nic
 				'users'=>array('?'),
 			),
-			array('allow', // zalogowany moze stworzyc bilet i przegladac je
+			array('allow', // kasjer moze stworzyc bilet i przegladac je (do modyfikacji potrzebuje kierownika - chyba tak jest bardziej 'odpowiedzialnie'?)
 				'actions'=>array('create','view','index'),
 				'users'=>array('@'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'users'=>array('antivirus','koral'),
+				'expression'=>'$user->stanowisko=="Kierownik"',
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),

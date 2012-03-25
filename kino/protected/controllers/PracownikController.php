@@ -30,8 +30,9 @@ class PracownikController extends Controller
 				'users'=>array('?'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'users'=>array('antivirus','koral'),
+				'expression'=>'$user->stanowisko=="Kierownik"',
 			),
+			//kasjer nie mo¿e nic
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),

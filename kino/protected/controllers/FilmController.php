@@ -33,12 +33,12 @@ class FilmController extends Controller
 			array('deny',  // anonimowy nie moze reszty
 				'users'=>array('?'),
 			),
-			array('allow', // zalogowany moze przegladac filmy
+			array('allow', // kasjer moze przegladac filmy
 				'actions'=>array('index','view','create'),
 				'users'=>array('@'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'users'=>array('antivirus','koral'),
+				'expression'=>'$user->stanowisko=="Kierownik"',
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
