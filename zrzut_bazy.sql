@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Czas wygenerowania: 25 Mar 2012, 11:21
+-- Czas wygenerowania: 25 Mar 2012, 14:56
 -- Wersja serwera: 5.1.54
 -- Wersja PHP: 5.2.17
 
@@ -59,14 +59,18 @@ CREATE TABLE IF NOT EXISTS `filmy` (
   `opis` text COLLATE utf8_polish_ci NOT NULL,
   `rezyser` varchar(50) COLLATE utf8_polish_ci NOT NULL,
   PRIMARY KEY (`idFilmu`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=7 ;
 
 --
 -- Zrzut danych tabeli `filmy`
 --
 
 INSERT INTO `filmy` (`idFilmu`, `tytul`, `gatunek`, `rok`, `opis`, `rezyser`) VALUES
-(1, 'baba', 'rr', 2131, 'Blahahahahah aeag a', 'Rrror');
+(1, 'baba', 'rr', 2131, 'Blahahahahah aeag a', 'Rrror'),
+(2, 'Film2', 'Terror', 1990, 'Terror ferror', 'Bha ha'),
+(4, 'FilmKasjera', 'tere', 2222, 'af', 'a'),
+(5, 'FilmKasjera', 'tere', 2222, 'af', 'awfaw'),
+(6, 'FilmKasjera', 'tere', 2222, 'af', 'awfaw');
 
 -- --------------------------------------------------------
 
@@ -140,27 +144,6 @@ INSERT INTO `seans` (`idSeansu`, `idSali`, `idFilmu`, `data`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla  `seanse`
---
-
-CREATE TABLE IF NOT EXISTS `seanse` (
-  `idSeansu` int(11) NOT NULL AUTO_INCREMENT,
-  `idSali` int(11) NOT NULL,
-  `idFilmu` int(11) NOT NULL,
-  `data` datetime NOT NULL,
-  PRIMARY KEY (`idSeansu`),
-  KEY `idSali` (`idSali`),
-  KEY `idFilmu` (`idFilmu`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=1 ;
-
---
--- Zrzut danych tabeli `seanse`
---
-
-
--- --------------------------------------------------------
-
---
 -- Struktura tabeli dla  `widzowie`
 --
 
@@ -196,10 +179,3 @@ ALTER TABLE `bilety`
 ALTER TABLE `seans`
   ADD CONSTRAINT `seans_ibfk_1` FOREIGN KEY (`idSali`) REFERENCES `sale` (`idSali`) ON UPDATE NO ACTION,
   ADD CONSTRAINT `seans_ibfk_2` FOREIGN KEY (`idFilmu`) REFERENCES `filmy` (`idFilmu`) ON UPDATE NO ACTION;
-
---
--- Ograniczenia dla tabeli `seanse`
---
-ALTER TABLE `seanse`
-  ADD CONSTRAINT `seanse_ibfk_1` FOREIGN KEY (`idFilmu`) REFERENCES `filmy` (`idFilmu`) ON UPDATE NO ACTION,
-  ADD CONSTRAINT `seanse_ibfk_2` FOREIGN KEY (`idSali`) REFERENCES `sale` (`idSali`) ON UPDATE NO ACTION;

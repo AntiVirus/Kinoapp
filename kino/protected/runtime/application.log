@@ -710,3 +710,599 @@ REQUEST_URI=/kino/index.php?r=pracownik/create
 in /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/pracownik/_form.php (38)
 in /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/pracownik/create.php (15)
 in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (82)
+2012/03/25 11:56:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/admin')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/index
+---
+2012/03/25 12:07:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('film/admin')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=film/admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 12:07:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('film')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=film
+---
+2012/03/25 12:09:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('view')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('film/view')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=film/view&id=2
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=film
+---
+2012/03/25 12:10:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('bilet')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=bilet
+---
+2012/03/25 12:13:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=pracownik
+---
+2012/03/25 13:05:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Nie jesteś upoważniony do wykonania tej akcji.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'Nie jeste?? upo...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/?r=pracownik
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 13:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Nie można rozszyfrować żądania "about".' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('about')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kino/index.php?r=about
+---
+2012/03/25 14:17:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Żądany widok "admin" nie został znaleziony.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('admin')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/kino/index.php?r=site/page&view=admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/contact
+---
+2012/03/25 14:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Żądany widok "admin" nie został znaleziony.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('admin')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/kino/index.php?r=site/page&view=admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/contact
+---
+2012/03/25 14:38:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Nie jesteś upoważniony do wykonania tej akcji.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'Nie jeste?? upo...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('seans/admin')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=seans/admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 14:57:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Nie jesteś upoważniony do wykonania tej akcji.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'Nie jeste?? upo...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=pracownik
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/page&view=admin
+---
+2012/03/25 14:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Nie można rozszyfrować żądania "widzowie".' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('widzowie')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kino/index.php?r=widzowie
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/page&view=admin
+---
+2012/03/25 14:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Nie można rozszyfrować żądania "widzowie".' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('widzowie')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kino/index.php?r=widzowie
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/page&view=admin
+---
+2012/03/25 14:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Nie można rozszyfrować żądania "widzowie".' in /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('widzowie')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kino/index.php?r=widzowie
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/page&view=admin
+---
+2012/03/25 14:58:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Nie jesteś upoważniony do wykonania tej akcji.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'Nie jeste?? upo...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('film/admin')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=film/admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=film
+---
+2012/03/25 15:03:36 [error] [exception.CException] exception 'CException' with message 'Właściwość "CWebUser.imie" nie jest zdefiniowana.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CWebUser.php(141): CComponent->__get('imie')
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/site/pages/admin.php(13): CWebUser->__get('imie')
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(127): require('/home/ztw/domai...')
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/ztw/domai...', NULL, true)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home/ztw/domai...', NULL, true)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(783): CController->renderPartial('pages/admin', NULL, true)
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php(141): CController->render('pages/admin')
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CAction.php(75): CViewAction->run()
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CAction->runWithParams(Array)
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('page')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=site/page&view=admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 15:08:48 [error] [exception.CException] exception 'CException' with message 'Właściwość "CWebUser.names" nie jest zdefiniowana.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CWebUser.php(141): CComponent->__get('names')
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/site/pages/admin.php(13): CWebUser->__get('names')
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(127): require('/home/ztw/domai...')
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/ztw/domai...', NULL, true)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home/ztw/domai...', NULL, true)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(783): CController->renderPartial('pages/admin', NULL, true)
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php(141): CController->render('pages/admin')
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CAction.php(75): CViewAction->run()
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CAction->runWithParams(Array)
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('page')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=site/page&view=admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 15:11:36 [error] [exception.CException] exception 'CException' with message 'Właściwość "CWebUser.names" nie jest zdefiniowana.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CWebUser.php(141): CComponent->__get('names')
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/site/pages/admin.php(13): CWebUser->__get('names')
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(127): require('/home/ztw/domai...')
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/ztw/domai...', NULL, true)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home/ztw/domai...', NULL, true)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(783): CController->renderPartial('pages/admin', NULL, true)
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php(141): CController->render('pages/admin')
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CAction.php(75): CViewAction->run()
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CAction->runWithParams(Array)
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('page')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=site/page&view=admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 15:11:38 [error] [exception.CException] exception 'CException' with message 'Właściwość "CWebUser.names" nie jest zdefiniowana.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CWebUser.php(141): CComponent->__get('names')
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/site/pages/admin.php(13): CWebUser->__get('names')
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(127): require('/home/ztw/domai...')
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/ztw/domai...', NULL, true)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home/ztw/domai...', NULL, true)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(783): CController->renderPartial('pages/admin', NULL, true)
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php(141): CController->render('pages/admin')
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CAction.php(75): CViewAction->run()
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CAction->runWithParams(Array)
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('page')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=site/page&view=admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 15:14:16 [error] [exception.CException] exception 'CException' with message 'Właściwość "CWebUser.names" nie jest zdefiniowana.' in /home/ztw/domains/lazy1.pl/public_html/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CWebUser.php(141): CComponent->__get('names')
+#1 /home/ztw/domains/lazy1.pl/public_html/kino/protected/views/site/pages/admin.php(14): CWebUser->__get('names')
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(127): require('/home/ztw/domai...')
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/ztw/domai...', NULL, true)
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home/ztw/domai...', NULL, true)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(783): CController->renderPartial('pages/admin', NULL, true)
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CViewAction.php(141): CController->render('pages/admin')
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CAction.php(75): CViewAction->run()
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CAction->runWithParams(Array)
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('page')
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/kino/index.php?r=site/page&view=admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=site/login
+---
+2012/03/25 15:21:02 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:21:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:21:02 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:21:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:21:59 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:21:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:21:59 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:21:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:22:23 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:22:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:22:39 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:22:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:22:52 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tempy2' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:22:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tempy2' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:22:52 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tempy2' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:22:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tempy2' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---
+2012/03/25 15:28:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Nie jesteś upoważniony do wykonania tej akcji.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'Nie jeste?? upo...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('film/create')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=film/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=film
+---
+2012/03/25 15:41:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Nie jesteś upoważniony do wykonania tej akcji.' in /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'Nie jeste?? upo...')
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('film/admin')
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kino/index.php?r=film/admin
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=film/index
+---
+2012/03/25 15:58:25 [error] [system.db.CDbCommand] Wywołanie CDbCommand::execute() nie powiodło się: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. Wykonywana instrukcja SQL to: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php (67)
+in /home/ztw/domains/lazy1.pl/public_html/kino/index.php (13)
+2012/03/25 15:58:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand nie zdołał wykonać instrukcji SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'temp' for key 'login'. The SQL statement executed was: INSERT INTO `pracownicy` (`imie`, `nazwisko`, `stanowisko`, `login`, `haslo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /home/ztw/domains/lazy1.pl/public_html/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/ztw/domains/lazy1.pl/public_html/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/ztw/domains/lazy1.pl/public_html/kino/protected/controllers/PracownikController.php(67): CActiveRecord->save()
+#3 /home/ztw/domains/lazy1.pl/public_html/framework/web/actions/CInlineAction.php(50): PracownikController->actionCreate()
+#4 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/ztw/domains/lazy1.pl/public_html/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/ztw/domains/lazy1.pl/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /home/ztw/domains/lazy1.pl/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('pracownik/creat...')
+#14 /home/ztw/domains/lazy1.pl/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/ztw/domains/lazy1.pl/public_html/kino/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kino/index.php?r=pracownik/create
+HTTP_REFERER=http://lazy1.pl/kino/index.php?r=pracownik/create
+---

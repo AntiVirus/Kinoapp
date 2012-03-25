@@ -35,7 +35,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'haslo'); ?>
-		<?php echo $form->textField($model,'haslo',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->textField($model,'haslo',array('size'=>30,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'haslo'); ?>
 	</div>
 

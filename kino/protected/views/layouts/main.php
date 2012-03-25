@@ -26,12 +26,13 @@ Yii::app()->user->logout();
 			<div id="menulogin"><center>
 				<ul>
 					<li><a href="index.php">Strona główna</a></li>
-					<li><a href="index.php">Repertuar</a></li>
-					<li><a href="index.php">Ceny</a></li>
-					<li><a href="index.php">Kontakt</a></li>
+					<li><a href="index.php?r=seans">Repertuar</a></li>
+					<li><a href="index.php?r=site/page&view=about">O nas</a></li>
+					<li><a href="index.php?r=site/contact">Kontakt</a></li>
+					<li><a href="index.php?r=site/page&view=admin">Administracja</a></li>
 					<?php 
 					if(!Yii::app()->user->isGuest){
-						echo '<li><a href="index.php?logout=1">Logout</a></li>';
+					echo '<li><a href="index.php?logout=1">Logout</a></li>';
 					} 
 					?>
 				</ul></center>

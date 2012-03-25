@@ -1,16 +1,19 @@
 <?php $this->pageTitle=Yii::app()->name; ?>
 <br />
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h1>Kino <i><?php echo CHtml::encode(Yii::app()->name); ?></i> serdecznie zaprasza!</h1>
 <br />
-<p>Congratulations! You have successfully created your Yii application.</p>
-<br />
-<p>You may change the content of this page by modifying the following two files:</p>
+<p>Premiery tygodnia:</p>
 <ul>
-	<li>View file: <tt><?php echo __FILE__; ?></tt></li>
-	<li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
+	<li>Igrzyska śmierci</li>
 </ul>
 <br />
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<p>Polecamy:</p>
+<ul>
+	<li>Spadkobiercy</li>
+</ul>
+<br />
+<p>Zapowiedzi:</p>
+<ul>
+	<li>Gniew tytanów</li>
+</ul>
+<br /><br />

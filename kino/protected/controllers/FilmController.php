@@ -26,17 +26,19 @@ class FilmController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
+			array('allow',  // anonimowy moze zobaczyc DANY film
+				'actions'=>array('view'),
+				'users'=>array('?'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+			array('deny',  // anonimowy nie moze reszty
+				'users'=>array('?'),
+			),
+			array('allow', // zalogowany moze przegladac filmy
+				'actions'=>array('index','view','create'),
 				'users'=>array('@'),
 			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+			array('allow', // kierownicy moga wszystko
+				'users'=>array('antivirus','koral'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -64,7 +66,7 @@ class FilmController extends Controller
 		$model=new Film;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Film']))
 		{
@@ -88,7 +90,7 @@ class FilmController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Film']))
 		{

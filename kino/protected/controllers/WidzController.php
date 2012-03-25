@@ -64,7 +64,7 @@ class WidzController extends Controller
 		$model=new Widz;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Widz']))
 		{
@@ -88,7 +88,7 @@ class WidzController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Widz']))
 		{

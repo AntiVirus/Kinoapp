@@ -71,7 +71,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 		$model=new <?php echo $this->modelClass; ?>;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['<?php echo $this->modelClass; ?>']))
 		{
@@ -95,7 +95,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['<?php echo $this->modelClass; ?>']))
 		{

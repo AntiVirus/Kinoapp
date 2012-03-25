@@ -1,0 +1,4 @@
+Ważne informację dla wytwórców.
+
+1. $this->performAjaxValidation($model); w kontrolerze musi być zawsze włączone! Gdy w widoku jest włączone a w kontrolerze nie, tworzy się kilka zduplikowanych rekordów
+2. Przy generowaniu widoku z szablonu NIE NADPISYWAĆ kontrolera tzn pliku /controllers/'Model'Controller.php

@@ -1,10 +1,13 @@
-1. W default controller template: dla views zmienic by Operations wyswietlaly sie w menubarze
-2. Spolszczyc wszystko
-3. h1 mniejsze
-4. enumy zrobic recznie
-5. Autoryzacja
-6. Statyczna podstrona logowania
-7. Inne statyczne podstrony typu kontakt
-8. Ukryc ID primary przy tworzeniu
-9. Zmodyfikowac modele zeby widzialy powiazane modele
-10. 
+Najbli¿sza laborka:
+- W default controller template: dla views zmienic by Operations wyswietlaly sie w menubarze na dole. Pouk³adaæ jakoœ ³adnie.
+- Spolszczyc wszystko
+- enumy w formach zrobic recznie
+- dla ka¿dego widoku zmieniæ index i view ¿eby to jakoœ ³adnie by³o, np w tabelce? wchodziæ w indexie na dany film przez klikniecie na tytu³ a nie na ID itd.
+- dodaæ troche przyk³adowych danych
+- wy³adniæ jakoœ stronê g³ówn¹
+- propozycja: film powinien mieæ obrazek? np w bazie trzymamy url do obrazka
+
+Nastêpna laborka:
+- Powi¹zane modele: przegl¹danie repertuaru tak aby wszystkie tabele ³¹czy³y siê w ca³oœæ
+- obs³uga b³êdu zduplikowanego klucza w bazie (np dodawanie pracownika o istniejacym loginie)
+- http://www.yiiframework.com/wiki/218/how-to-use-single-form-to-collect-data-for-two-or-more-models-cactiveform-and-ajax-validation-edition/

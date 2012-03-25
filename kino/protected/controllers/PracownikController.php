@@ -26,17 +26,11 @@ class PracownikController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
+			array('deny',  // anonimowy nie moze nic
+				'users'=>array('?'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+			array('allow', // kierownicy moga wszystko
+				'users'=>array('antivirus','koral'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -64,7 +58,7 @@ class PracownikController extends Controller
 		$model=new Pracownik;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Pracownik']))
 		{
@@ -92,13 +86,17 @@ class PracownikController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Pracownik']))
 		{
 			$model->attributes=$_POST['Pracownik'];
-			if($model->save())
+			$model->haslo = $model->hashPassword($_POST['Pracownik']['haslo'], $_POST['Pracownik']['login']);
+			if($model->save()) {
 				$this->redirect(array('view','id'=>$model->idPracownika));
+			} else {
+				  $model->haslo = $_POST['Pracownik']['haslo'];
+			}
 		}
 
 		$this->render('update',array(

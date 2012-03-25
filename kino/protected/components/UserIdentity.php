@@ -24,6 +24,7 @@ class UserIdentity extends CUserIdentity
         else if(!$user->validatePassword($this->password, $this->username))
                 $this->errorCode=self::ERROR_PASSWORD_INVALID;
         else{
+				$this->setState('names', htmlentities($user->imie)." ".htmlentities($user->nazwisko));
                 $this->username = $user->login;
                 $this->errorCode=self::ERROR_NONE;
 
