@@ -26,7 +26,7 @@ Yii::app()->user->logout();
 			<div id="menulogin"><center>
 				<ul>
 					<li><a href="index.php">Strona główna</a></li>
-					<li><a href="index.php?r=seans">Repertuar</a></li>
+					<li><a href="index.php?r=film">Repertuar</a></li>
 					<li><a href="index.php?r=site/page&view=about">O nas</a></li>
 					<li><a href="index.php?r=site/contact">Kontakt</a></li>
 					<li><a href="index.php?r=site/page&view=admin">Administracja</a></li>

@@ -31,7 +31,7 @@ class SeansController extends Controller
 				'users'=>array('?'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'expression'=>'$user->stanowisko=="Kierownik"',
+				'expression'=>'!$user->isGuest && $user->stanowisko=="Kierownik"',
 			),
 			array('allow', // kasjer moze przegladac seanse
 				'actions'=>array('view','index'),

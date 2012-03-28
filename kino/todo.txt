@@ -1,14 +1,15 @@
-Najbli¿sza laborka:
-- W default controller template: dla views zmienic by Operations wyswietlaly sie w menubarze na dole. Pouk³adaæ jakoœ ³adnie.
-- Spolszczyc wszystko - chyba tylko slowko 'Operations' zostalo
-- enumy w formach zrobic recznie
-- dla ka¿dego widoku zmieniæ index i view ¿eby to jakoœ ³adnie by³o, np w tabelce? 
-- wchodziæ w widoku index na dany rekord(np film) przez klikniecie na nazwê/tytu³ a nie na ID itd. wyrzuciæ wyœwietlanie ID.
+Poprzednia laborka:
 - dodaæ troche przyk³adowych danych
 - zape³niæ jakoœ stronê g³ówn¹
-- propozycja: film powinien mieæ obrazek? np w bazie trzymamy url do obrazka
 
-Nastêpna laborka:
+Najblizsza laborka:
 - Powi¹zane modele: przegl¹danie repertuaru tak aby wszystkie tabele ³¹czy³y siê w ca³oœæ
 - obs³uga b³êdu zduplikowanego klucza w bazie (np dodawanie pracownika o istniejacym loginie)
 - http://www.yiiframework.com/wiki/218/how-to-use-single-form-to-collect-data-for-two-or-more-models-cactiveform-and-ajax-validation-edition/
+- repertuar - wyszukiwanie AJAX!
+- repertuar - warunki do wyswietlania wlasciwych rekordow
+- estetyka widokow goscia
+- dla modeli z referencjami pobierac do comboboxa opcje
+
+Pozniejsza laborka:
+- rezerwacja

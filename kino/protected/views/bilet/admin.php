@@ -49,6 +49,7 @@ lub <b>=</b>) na początku każdej wyszukiwanej wartości, aby wyspecyfikować j
 		'rodzaj',
 		'cena',
 		/*
+		'data',
 		'idWidza',
 		'idPracownika',
 		*/

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $this->breadcrumbs=array(
 	'Pracownik'=>array('index'),
 	$model->idPracownika,
@@ -8,7 +8,7 @@ $this->menu=array(
 	array('label'=>'Lista Pracownik', 'url'=>array('index')),
 	array('label'=>'Utwórz Pracownik', 'url'=>array('create')),
 	array('label'=>'Edytuj Pracownik', 'url'=>array('update', 'id'=>$model->idPracownika)),
-	array('label'=>'Usuń Pracownik', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idPracownika),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Usuń Pracownik', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idPracownika),'confirm'=>'Czy na pewno chcesz usunąć?')),
 	array('label'=>'Zarządzaj Pracownik', 'url'=>array('admin')),
 );
 ?>

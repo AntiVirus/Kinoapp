@@ -8,11 +8,13 @@
  * @property integer $idSali
  * @property integer $idFilmu
  * @property string $data
+ * @property string $godzina
+ * @property string $datakoniec
  *
  * The followings are the available model relations:
  * @property Bilety[] $bileties
- * @property Filmy $idFilmu0
  * @property Sale $idSali0
+ * @property Filmy $idFilmu0
  */
 class Seans extends CActiveRecord
 {
@@ -42,11 +44,15 @@ class Seans extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idSali, idFilmu, data', 'required'),
+			array('idSali, idFilmu, data, godzina', 'required'),
 			array('idSali, idFilmu', 'numerical', 'integerOnly'=>true),
+			array('data, datakoniec', 'length', 'max'=>10),
+			array('godzina', 'length', 'max'=>5),
+			array('data,datakoniec', 'date','format'=>'yyyy-MM-dd', 'message'=>'Zawartość pola Data musi być w formacie yyyy-mm-dd'),
+			array('godzina', 'date','format'=>'hh:mm', 'message'=>'Zawartość pola Godzina musi być w formacie hh:mm'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idSeansu, idSali, idFilmu, data', 'safe', 'on'=>'search'),
+			array('idSeansu, idSali, idFilmu, data, godzina, datakoniec', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,8 +65,8 @@ class Seans extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'bileties' => array(self::HAS_MANY, 'Bilety', 'idSeansu'),
-			'idFilmu0' => array(self::BELONGS_TO, 'Filmy', 'idFilmu'),
 			'idSali0' => array(self::BELONGS_TO, 'Sale', 'idSali'),
+			'idFilmu0' => array(self::BELONGS_TO, 'Filmy', 'idFilmu'),
 		);
 	}
 
@@ -74,6 +80,8 @@ class Seans extends CActiveRecord
 			'idSali' => 'Id Sali',
 			'idFilmu' => 'Id Filmu',
 			'data' => 'Data',
+			'godzina' => 'Godzina',
+			'datakoniec' => 'Datakoniec',
 		);
 	}
 
@@ -87,11 +95,18 @@ class Seans extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
+		//$now = new CDbExpression("NOW()");
 
+		
 		$criteria->compare('idSeansu',$this->idSeansu);
 		$criteria->compare('idSali',$this->idSali);
 		$criteria->compare('idFilmu',$this->idFilmu);
 		$criteria->compare('data',$this->data,true);
+		$criteria->compare('godzina',$this->godzina,true);
+		$criteria->compare('datakoniec',$this->datakoniec,true);
+		//$criteria->addCondition('datakoniec < '.$now);		
+		$criteria->compare('datakoniec','<'. date('yyyy-mm-dd 00:00:00', strtotime('now')), true);
+
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

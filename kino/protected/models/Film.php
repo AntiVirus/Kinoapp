@@ -10,6 +10,7 @@
  * @property integer $rok
  * @property string $opis
  * @property string $rezyser
+ * @property string $imageUrl
  *
  * The followings are the available model relations:
  * @property Seans[] $seans
@@ -47,9 +48,10 @@ class Film extends CActiveRecord
 			array('tytul', 'length', 'max'=>60),
 			array('gatunek', 'length', 'max'=>30),
 			array('rezyser', 'length', 'max'=>50),
+			array('imageUrl', 'length', 'max'=>150),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idFilmu, tytul, gatunek, rok, opis, rezyser', 'safe', 'on'=>'search'),
+			array('idFilmu, tytul, gatunek, rok, opis, rezyser, imageUrl', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,6 +79,7 @@ class Film extends CActiveRecord
 			'rok' => 'Rok',
 			'opis' => 'Opis',
 			'rezyser' => 'Rezyser',
+			'imageUrl' => 'Adres obrazka',
 		);
 	}
 
@@ -97,6 +100,7 @@ class Film extends CActiveRecord
 		$criteria->compare('rok',$this->rok);
 		$criteria->compare('opis',$this->opis,true);
 		$criteria->compare('rezyser',$this->rezyser,true);
+		$criteria->compare('imageUrl',$this->imageUrl,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

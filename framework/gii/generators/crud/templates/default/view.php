@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * The following variables are available in this template:
  * - $this: the CrudCode object
@@ -18,7 +18,7 @@ $this->menu=array(
 	array('label'=>'Lista <?php echo $this->modelClass; ?>', 'url'=>array('index')),
 	array('label'=>'Utwórz <?php echo $this->modelClass; ?>', 'url'=>array('create')),
 	array('label'=>'Edytuj <?php echo $this->modelClass; ?>', 'url'=>array('update', 'id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>)),
-	array('label'=>'Usuń <?php echo $this->modelClass; ?>', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Usuń <?php echo $this->modelClass; ?>', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>),'confirm'=>'Czy na pewno chcesz usunąć?')),
 	array('label'=>'Zarządzaj <?php echo $this->modelClass; ?>', 'url'=>array('admin')),
 );
 ?>

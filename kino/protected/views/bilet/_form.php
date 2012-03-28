@@ -29,7 +29,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'rodzaj'); ?>
-		<?php echo $form->textField($model,'rodzaj',array('size'=>9,'maxlength'=>9)); ?>
+		<?php $cats=array('normalny'=>'Normalny','ulgowy'=>'Ulgowy','student'=>'Student','senior'=>'Senior');?>
+		<?php echo $form->dropDownList($model,'rodzaj',$cats, array('empty' => '--Wybierz--')); ?>
 		<?php echo $form->error($model,'rodzaj'); ?>
 	</div>
 
@@ -37,6 +38,12 @@
 		<?php echo $form->labelEx($model,'cena'); ?>
 		<?php echo $form->textField($model,'cena'); ?>
 		<?php echo $form->error($model,'cena'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'data'); ?>
+		<?php echo $form->textField($model,'data',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->error($model,'data'); ?>
 	</div>
 
 	<div class="row">

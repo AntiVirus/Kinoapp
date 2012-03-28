@@ -30,7 +30,7 @@ public function accessRules()
 				'users'=>array('?'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'expression'=>'$user->stanowisko=="Kierownik"',
+				'expression'=>'!$user->isGuest && $user->stanowisko=="Kierownik"',
 			),
 			// kasjer nic nie mo¿e (chyba nie potrzebuje?)
 			array('deny',  // deny all users

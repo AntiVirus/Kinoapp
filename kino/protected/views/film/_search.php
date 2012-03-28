@@ -35,6 +35,11 @@
 		<?php echo $form->textField($model,'rezyser',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'imageUrl'); ?>
+		<?php echo $form->textField($model,'imageUrl',array('size'=>60,'maxlength'=>150)); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Szukaj'); ?>
 	</div>

@@ -23,7 +23,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'stanowisko'); ?>
-		<?php echo $form->textField($model,'stanowisko',array('size'=>9,'maxlength'=>9)); ?>
+		<?php $cats=array('kasjer'=>'Kasjer','kierownik'=>'Kierownik');?>
+		<?php echo $form->dropDownList($model,'stanowisko',$cats, array('empty' => '--Wybierz--')); ?>
 		<?php echo $form->error($model,'stanowisko'); ?>
 	</div>
 

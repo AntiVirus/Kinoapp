@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $this->breadcrumbs=array(
 	'Widz'=>array('index'),
 	$model->idWidza,
@@ -8,7 +8,7 @@ $this->menu=array(
 	array('label'=>'Lista Widz', 'url'=>array('index')),
 	array('label'=>'Utwórz Widz', 'url'=>array('create')),
 	array('label'=>'Edytuj Widz', 'url'=>array('update', 'id'=>$model->idWidza)),
-	array('label'=>'Usuń Widz', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idWidza),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Usuń Widz', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idWidza),'confirm'=>'Czy na pewno chcesz usunąć?')),
 	array('label'=>'Zarządzaj Widz', 'url'=>array('admin')),
 );
 ?>

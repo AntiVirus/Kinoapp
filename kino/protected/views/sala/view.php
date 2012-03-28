@@ -8,7 +8,7 @@ $this->menu=array(
 	array('label'=>'Lista Sala', 'url'=>array('index')),
 	array('label'=>'Utwórz Sala', 'url'=>array('create')),
 	array('label'=>'Edytuj Sala', 'url'=>array('update', 'id'=>$model->idSali)),
-	array('label'=>'Usuń Sala', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idSali),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Usuń Sala', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idSali),'confirm'=>'Czy na pewno chcesz usunąć?')),
 	array('label'=>'Zarządzaj Sala', 'url'=>array('admin')),
 );
 ?>

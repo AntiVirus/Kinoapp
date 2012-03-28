@@ -34,7 +34,7 @@ class BiletController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // kierownicy moga wszystko
-				'expression'=>'$user->stanowisko=="Kierownik"',
+				'expression'=>'!$user->isGuest && $user->stanowisko=="Kierownik"',
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),

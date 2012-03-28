@@ -16,5 +16,13 @@
 	<?php echo CHtml::encode($data->data); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('godzina')); ?>:</b>
+	<?php echo CHtml::encode($data->godzina); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('datakoniec')); ?>:</b>
+	<?php echo CHtml::encode($data->datakoniec); ?>
+	<br />
+
 
 </div>

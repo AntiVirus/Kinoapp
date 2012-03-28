@@ -39,6 +39,12 @@
 		<?php echo $form->error($model,'rezyser'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'imageUrl'); ?>
+		<?php echo $form->textField($model,'imageUrl',array('size'=>60,'maxlength'=>150)); ?>
+		<?php echo $form->error($model,'imageUrl'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Utwórz' : 'Zapisz'); ?>
 	</div>
