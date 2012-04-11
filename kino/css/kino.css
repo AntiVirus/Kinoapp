@@ -45,9 +45,12 @@ select { background:#00AEEF; color:#FFF; margin:5px; padding:10px; font-weight:b
 #tresc p { display:block; margin-bottom:20px; }
 #tresc p img { border-radius: 15px; margin:10px;} 
 
-#stopka { border-radius: 15px; background:#00AEEF; color:#FFF; padding:20px; text-align:center;  text-shadow:none;}
+#stopka { border-radius: 15px; background:#00AEEF; color:#FFF; padding:20px; text-align:center;  text-shadow:none; clear:both;}
 
 #hotelopis { display:block; float:none; }
 #hotelkomentarze { display:block; float:none; }
 
 h1 {background:#FFF; color:#66CC33; text-shadow: 1px 1px 0px #777, -1px -1px 0px #CCC, 0px 0px 20px #555;  font-size:20px; text-align:center; padding:20px;}
+h2 {background:#FFF; color:#00AEEF; text-shadow: 1px 1px 0px #777, -1px -1px 0px #CCC, 0px 0px 20px #555;  font-size:18px; padding: 10px;}
+h3 {background:#FFF; color:#66CC33; text-shadow: 1px 1px 0px #777, -1px -1px 0px #CCC, 0px 0px 20px #555;  font-size:14px; padding: 10px;}
+hr {border: none;  background: #00AEEF; height: 2px; }
