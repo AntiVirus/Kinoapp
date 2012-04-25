@@ -1,15 +1,8 @@
-Poprzednia laborka:
 - dodaæ troche przyk³adowych danych
-- zape³niæ jakoœ stronê g³ówn¹
-
-Najblizsza laborka:
-- Powi¹zane modele: przegl¹danie repertuaru tak aby wszystkie tabele ³¹czy³y siê w ca³oœæ
 - obs³uga b³êdu zduplikowanego klucza w bazie (np dodawanie pracownika o istniejacym loginie)
-- http://www.yiiframework.com/wiki/218/how-to-use-single-form-to-collect-data-for-two-or-more-models-cactiveform-and-ajax-validation-edition/
-- repertuar - wyszukiwanie AJAX!
-- repertuar - warunki do wyswietlania wlasciwych rekordow
 - estetyka widokow goscia
-- dla modeli z referencjami pobierac do comboboxa opcje
+- szczegoliki - wybór dnia zrobic ³adniej w repertuarze,  sortowanie po godzinie?(nie udalo mi sie narazie)
 
-Pozniejsza laborka:
-- rezerwacja
+
+- SYSTEM REZERWACJI! 
+- (opcjonalnie) integracja systemu rezerwacji z kasjerem

@@ -47,7 +47,6 @@ lub <b>=</b>) na początku każdej wyszukiwanej wartości, aby wyspecyfikować j
 		'idFilmu',
 		'data',
 		'godzina',
-		'datakoniec',
 		array(
 			'class'=>'CButtonColumn',
 		),

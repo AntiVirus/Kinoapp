@@ -11,13 +11,15 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idSali'); ?>
-		<?php echo $form->textField($model,'idSali'); ?>
+		<?php echo $form->dropDownList($model,'idSali', CHtml::listData(Sala::model()->findAll(), 'idSali', 'idSali'), array('empty'=>'--Proszę wybrać--'));
+		?>
 		<?php echo $form->error($model,'idSali'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idFilmu'); ?>
-		<?php echo $form->textField($model,'idFilmu'); ?>
+		<?php echo $form->dropDownList($model,'idFilmu', CHtml::listData(Film::model()->findAll(), 'idFilmu', 'tytul'), array('empty'=>'--Proszę wybrać--'));
+		?>
 		<?php echo $form->error($model,'idFilmu'); ?>
 	</div>
 
@@ -33,11 +35,6 @@
 		<?php echo $form->error($model,'godzina'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'datakoniec'); ?>
-		<?php echo $form->textField($model,'datakoniec',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'datakoniec'); ?>
-	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Utwórz' : 'Zapisz'); ?>

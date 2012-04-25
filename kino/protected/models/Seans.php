@@ -46,9 +46,7 @@ class Seans extends CActiveRecord
 		return array(
 			array('idSali, idFilmu, data, godzina', 'required'),
 			array('idSali, idFilmu', 'numerical', 'integerOnly'=>true),
-			array('data, datakoniec', 'length', 'max'=>10),
-			array('godzina', 'length', 'max'=>5),
-			array('data,datakoniec', 'date','format'=>'yyyy-MM-dd', 'message'=>'Zawartość pola Data musi być w formacie yyyy-mm-dd'),
+			array('data', 'date','format'=>'yyyy-MM-dd', 'message'=>'Zawartość pola Data musi być w formacie yyyy-mm-dd'),
 			array('godzina', 'date','format'=>'hh:mm', 'message'=>'Zawartość pola Godzina musi być w formacie hh:mm'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -64,9 +62,9 @@ class Seans extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'bileties' => array(self::HAS_MANY, 'Bilety', 'idSeansu'),
-			'idSali0' => array(self::BELONGS_TO, 'Sale', 'idSali'),
-			'idFilmu0' => array(self::BELONGS_TO, 'Filmy', 'idFilmu'),
+			'bileties' => array(self::HAS_MANY, 'Bilet', 'idSeansu'),
+			'idSali0' => array(self::BELONGS_TO, 'Sala', 'idSali'),
+			'idFilmu0' => array(self::BELONGS_TO, 'Film', 'idFilmu'),
 		);
 	}
 
@@ -77,11 +75,12 @@ class Seans extends CActiveRecord
 	{
 		return array(
 			'idSeansu' => 'Id Seansu',
-			'idSali' => 'Id Sali',
-			'idFilmu' => 'Id Filmu',
+			'idSali' => 'Numer sali',
+			'idFilmu' => 'Tytuł filmu',
 			'data' => 'Data',
 			'godzina' => 'Godzina',
-			'datakoniec' => 'Datakoniec',
+			'datakoniec' => 'Data koniec',
+			'tytulfilmu' => 'Tytuł filmu',
 		);
 	}
 
@@ -104,8 +103,9 @@ class Seans extends CActiveRecord
 		$criteria->compare('data',$this->data,true);
 		$criteria->compare('godzina',$this->godzina,true);
 		$criteria->compare('datakoniec',$this->datakoniec,true);
+	
 		//$criteria->addCondition('datakoniec < '.$now);		
-		$criteria->compare('datakoniec','<'. date('yyyy-mm-dd 00:00:00', strtotime('now')), true);
+		//$criteria->compare('datakoniec','<'. date('yyyy-mm-dd 00:00:00', strtotime('now')), true);
 
 
 		return new CActiveDataProvider($this, array(

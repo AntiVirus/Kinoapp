@@ -81,14 +81,14 @@ class Bilet extends CActiveRecord
 	{
 		return array(
 			'idBiletu' => 'Id Biletu',
-			'idSeansu' => 'Id Seansu',
+			'idSeansu' => 'Seans',
 			'rzad' => 'Rzad',
 			'miejsce' => 'Miejsce',
 			'rodzaj' => 'Rodzaj',
 			'cena' => 'Cena',
 			'data' => 'Data',
-			'idWidza' => 'Id Widza',
-			'idPracownika' => 'Id Pracownika',
+			'idWidza' => 'Widz',
+			'idPracownika' => 'Pracownik',
 		);
 	}
 

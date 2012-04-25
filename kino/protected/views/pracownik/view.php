@@ -18,11 +18,9 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'idPracownika',
 		'imie',
 		'nazwisko',
 		'stanowisko',
 		'login',
-		'haslo',
 	),
 )); ?>

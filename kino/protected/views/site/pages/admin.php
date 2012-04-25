@@ -12,13 +12,18 @@ $this->breadcrumbs=array(
 
 
 <h1>Witaj ponownie <? echo Yii::app()->user->getState('names'); ?></h1>
-<p><a href="index.php?r=bilet/admin">Bilety</a><br>
+<? if(Yii::app()->user->getState('stanowisko')=="Kierownik"){
+echo '<p><a href="index.php?r=bilet/admin">Bilety</a><br>
 <a href="index.php?r=film/admin">Filmy</a><br>
 <a href="index.php?r=sala/admin">Sale</a><br>
 <a href="index.php?r=seans/admin">Seanse</a><br>
 <a href="index.php?r=widz/admin">Widzowie</a><br>
 <a href="index.php?r=pracownik/admin">Pracownicy</a><br>
-<a href="index.php?r=gii">Gii code generator</a><br>
+<a href="index.php?r=gii">Gii code generator</a><br>';
+} else {
+echo '<p><a href="index.php?r=bilet/create">Bilety</a><br>';
+}
+?>
 
 </p>
 

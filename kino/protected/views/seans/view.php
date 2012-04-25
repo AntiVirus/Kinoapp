@@ -20,9 +20,8 @@ $this->menu=array(
 	'attributes'=>array(
 		'idSeansu',
 		'idSali',
-		'idFilmu',
+		array('label'=>'idFilmu', 'value'=>$model->idFilmu0->tytul),
 		'data',
 		'godzina',
-		'datakoniec',
 	),
 )); ?>

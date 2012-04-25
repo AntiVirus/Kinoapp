@@ -65,7 +65,7 @@ class Sala extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idSali' => 'Id Sali',
+			'idSali' => 'Numer sali',
 			'rzedy' => 'Rzedy',
 			'miejsca' => 'Miejsca',
 		);

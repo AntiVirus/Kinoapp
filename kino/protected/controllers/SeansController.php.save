@@ -128,25 +128,15 @@ class SeansController extends Controller
 	{
 		$criteria = new CDbCriteria();
 
-		if(isset($_GET['daymore'])){
-		$daymore=$_GET['daymore'];
-		} else {
-		$daymore=0;
-		}
-
+		if( strlen( $string ) > 0 )
 			//$criteria->addCondition('datakoniec < '.$now);		
 			//$criteria->addCondition('datakoniec<'. date('yyyy-mm-dd', strtotime('now')));
 			//$criteria->addCondition(time('datakoniec').'<'. date('U', strtotime('now')));
 			//$criteria->compare('datakoniec','<'. date('yyyy-mm-dd', strtotime('now')), true);
 			//$criteria->compare('datakoniec',date('yyyy-mm-dd', strtotime('now')), false,'<');
-			$criteria->addCondition('data = "'.date('Y-m-d', strtotime('now +'.$daymore.' days')).'" 
-');
-			$criteria->with[]='idFilmu0';
-			$criteria->order = 'idFilmu0.tytul ASC';
-			//ddoac kryterium od godziny!
-		if (strlen ($string) > 0 )
-			$criteria->addSearchCondition( 'idFilmu0.tytul', $string, true, 'AND' );
-		$dataProvider=new CActiveDataProvider('Seans', array( 'criteria' => $criteria, )); 
+			$criteria->addCondition('datakoniec < "'.date('yyyy-mm-dd', strtotime('now')).'" ');
+			$criteria->addSearchCondition( 'idFilmu', $string, true, 'OR' );
+		$dataProvider=new CActiveDataProvider('Seans', array( 'criteria' => $criteria, )); // 'with'=>array('author'),
 
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
