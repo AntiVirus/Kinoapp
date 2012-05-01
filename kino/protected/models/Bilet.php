@@ -47,13 +47,11 @@ class Bilet extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idSeansu, rzad, miejsce, rodzaj, cena, data', 'required'),
+			array('idSeansu, rzad, miejsce, rodzaj, cena', 'required'),
 			array('idSeansu, miejsce, idWidza, idPracownika', 'numerical', 'integerOnly'=>true),
 			array('cena', 'numerical'),
 			array('rzad', 'length', 'max'=>1),
 			array('rodzaj', 'length', 'max'=>9),
-			array('data', 'length', 'max'=>10),
-			array('data', 'date','format'=>'yyyy-MM-dd', 'message'=>'Zawartoœæ pola Data musi byæ w formacie yyyy-mm-dd'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('idBiletu, idSeansu, rzad, miejsce, rodzaj, cena, data, idWidza, idPracownika', 'safe', 'on'=>'search'),

@@ -66,7 +66,9 @@ class BiletController extends Controller
 
 		if(isset($_POST['Bilet']))
 		{
+			$_POST['Bilet']['idPracownika']=Yii::app()->user->getState('idPracownika'); 
 			$model->attributes=$_POST['Bilet'];
+			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idBiletu));
 		}

@@ -26,6 +26,7 @@ class UserIdentity extends CUserIdentity
         else{
 				$this->setState('names', $user->imie." ".$user->nazwisko);
 				$this->setState('stanowisko', $user->stanowisko);
+				$this->setState('idPracownika', $user->idPracownika);
                 $this->username = $user->login;
                 $this->errorCode=self::ERROR_NONE;
 

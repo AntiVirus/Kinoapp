@@ -24,7 +24,6 @@ $this->menu=array(
 		'miejsce',
 		'rodzaj',
 		'cena',
-		'data',
 		'idWidza',
 		'idPracownika',
 	),

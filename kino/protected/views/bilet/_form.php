@@ -53,11 +53,6 @@
 		<?php echo $form->error($model,'cena'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'data'); ?>
-		<?php echo $form->textField($model,'data',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'data'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idWidza'); ?>
@@ -65,11 +60,7 @@
 		<?php echo $form->error($model,'idWidza'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'idPracownika'); ?>
-		<?php echo $form->dropDownList($model,'idPracownika', CHtml::listData(Pracownik::model()->findAll(), 'idPracownika', 'nazwisko'), array('empty'=>'--Proszę wybrać--')); //todo auto ?>
-		<?php echo $form->error($model,'idPracownika'); ?>
-	</div>
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Utwórz' : 'Zapisz'); ?>

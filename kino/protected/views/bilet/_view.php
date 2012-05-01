@@ -24,9 +24,7 @@
 	<?php echo CHtml::encode($data->cena); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('data')); ?>:</b>
-	<?php echo CHtml::encode($data->data); ?>
-	<br />
+
 
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idWidza')); ?>:</b>

@@ -28,15 +28,16 @@ Yii::app()->clientScript->registerScript('search',
 <h1>Seans</h1>
 
 <p>Wybierz dzień</p>
+
 <?php
 for($dzien=0; $dzien<7; $dzien++)
 {
 echo '<a href=\'index.php?r=seans&daymore='.$dzien.'\'>'.date(j,strtotime('now 
 +'.$dzien.' day')).'</a>  ';
+//echo '<tr>'.date(l,strtotime('now +'.$dzien.' day')).'</td></tr>';
 }
 
 ?>
-
 
 <h1><?php 
 $nazwy = array(
