@@ -10,7 +10,6 @@
  * @property integer $miejsce
  * @property string $rodzaj
  * @property double $cena
- * @property string $data
  * @property integer $idWidza
  * @property integer $idPracownika
  *
@@ -54,7 +53,7 @@ class Bilet extends CActiveRecord
 			array('rodzaj', 'length', 'max'=>9),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idBiletu, idSeansu, rzad, miejsce, rodzaj, cena, data, idWidza, idPracownika', 'safe', 'on'=>'search'),
+			array('idBiletu, idSeansu, rzad, miejsce, rodzaj, cena, idWidza, idPracownika', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -84,7 +83,6 @@ class Bilet extends CActiveRecord
 			'miejsce' => 'Miejsce',
 			'rodzaj' => 'Rodzaj',
 			'cena' => 'Cena',
-			'data' => 'Data',
 			'idWidza' => 'Widz',
 			'idPracownika' => 'Pracownik',
 		);
@@ -107,7 +105,6 @@ class Bilet extends CActiveRecord
 		$criteria->compare('miejsce',$this->miejsce);
 		$criteria->compare('rodzaj',$this->rodzaj,true);
 		$criteria->compare('cena',$this->cena);
-		$criteria->compare('data',$this->data,true);
 		$criteria->compare('idWidza',$this->idWidza);
 		$criteria->compare('idPracownika',$this->idPracownika);
 

@@ -9,7 +9,6 @@
  * @property integer $idFilmu
  * @property string $data
  * @property string $godzina
- * @property string $datakoniec
  *
  * The followings are the available model relations:
  * @property Bilety[] $bileties
@@ -79,7 +78,6 @@ class Seans extends CActiveRecord
 			'idFilmu' => 'Tytuł filmu',
 			'data' => 'Data',
 			'godzina' => 'Godzina',
-			'datakoniec' => 'Data koniec',
 			'tytulfilmu' => 'Tytuł filmu',
 		);
 	}
@@ -102,7 +100,6 @@ class Seans extends CActiveRecord
 		$criteria->compare('idFilmu',$this->idFilmu);
 		$criteria->compare('data',$this->data,true);
 		$criteria->compare('godzina',$this->godzina,true);
-		$criteria->compare('datakoniec',$this->datakoniec,true);
 	
 		//$criteria->addCondition('datakoniec < '.$now);		
 		//$criteria->compare('datakoniec','<'. date('yyyy-mm-dd 00:00:00', strtotime('now')), true);

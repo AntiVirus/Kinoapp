@@ -1,4 +1,27 @@
 <?php
+
+$nazwy = array(
+                  'January'   => 'Stycznia', 
+                  'February'  => 'Lutego', 
+                  'March'     => 'Marca', 
+                  'April'     => 'Kwietnia', 
+                  'May'       => 'Maja', 
+                  'June'      => 'Czerwca', 
+                  'July'      => 'Lipca', 
+                  'August'    => 'Sierpnia', 
+                  'September' => 'Września', 
+                  'October'   => 'Października', 
+                  'November'  => 'Listopada', 
+                  'December'  => 'Grudnia',
+		'Monday' => 'Poniedziałek',
+		'Tuesday' => 'Wtorek',
+		'Wednesday' => 'Środa',
+		'Thursday' => 'Czwartek',
+		'Friday' => 'Piątek',
+		'Saturday' => 'Sobota',
+		'Sunday' => 'Niedziela'
+                 ); 
+
 $this->breadcrumbs=array(
 	'Seans',
 );
@@ -25,42 +48,19 @@ Yii::app()->clientScript->registerScript('search',
 );
 ?>
 
-<h1>Seans</h1>
+<table id="daylist"><tr><ul>
+	<?php
+	for($dzien=0; $dzien<7; $dzien++)
+	{
+	echo '<td style="text-align: center; padding: 10px;"><a href=\'index.php?r=seans&daymore='.$dzien.'\'>'.date(j,strtotime('now 
+	+'.$dzien.' day')).'<br />  ';
+	echo ''.strtr(date(l,strtotime('now +'.$dzien.' day')),$nazwy).'</a></td>';
+	}
 
-<p>Wybierz dzień</p>
-
-<?php
-for($dzien=0; $dzien<7; $dzien++)
-{
-echo '<a href=\'index.php?r=seans&daymore='.$dzien.'\'>'.date(j,strtotime('now 
-+'.$dzien.' day')).'</a>  ';
-//echo '<tr>'.date(l,strtotime('now +'.$dzien.' day')).'</td></tr>';
-}
-
-?>
+	?>
+</ul></tr></table>
 
 <h1><?php 
-$nazwy = array(
-                  'January'   => 'Stycznia', 
-                  'February'  => 'Lutego', 
-                  'March'     => 'Marca', 
-                  'April'     => 'Kwietnia', 
-                  'May'       => 'Maja', 
-                  'June'      => 'Czerwca', 
-                  'July'      => 'Lipca', 
-                  'August'    => 'Sierpnia', 
-                  'September' => 'Września', 
-                  'October'   => 'Października', 
-                  'November'  => 'Listopada', 
-                  'December'  => 'Grudnia',
-		'Monday' => 'Poniedziałek',
-		'Tuesday' => 'Wtorek',
-		'Wednesday' => 'Środa',
-		'Thursday' => 'Czwartek',
-		'Friday' => 'Piątek',
-		'Saturday' => 'Sobota',
-		'Sunday' => 'Niedziela'
-                 ); 
 
  if(isset($_GET['daymore'])){
                 $daymore=$_GET['daymore'];
@@ -69,19 +69,18 @@ $nazwy = array(
                 }
 
  
-  echo strtr(date('l j F Y',strtotime('now +'.$daymore.' days')), $nazwy); ?></h1>
+ echo strtr(date('l j F Y',strtotime('now +'.$daymore.' days')), $nazwy); ?></h1>
 
 <?php
 echo 'Wyszukaj po nazwie filmu:';
 echo CHtml::beginForm('', 'get', array('id'=>'filter-form'))
     . CHtml::textField('string', (isset($_GET['string'])) ? $_GET['string'] : '', array('id'=>'string'))
 //    . CHtml::submitButton('Search', array('name'=>''))
-    . CHtml::endForm();
+    . CHtml::endForm(); ?>
 
 
 
-
-
+<?php
 $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',

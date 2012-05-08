@@ -133,14 +133,18 @@ class SeansController extends Controller
 		} else {
 		$daymore=0;
 		}
-
+		
+		$criteria->addCondition('data = "'.date('Y-m-d', strtotime('now +'.$daymore.' days')).'" ');
+		if($daymore==0)
+		{
+			$criteria->addCondition('godzina > "'.date('H:i', strtotime('now')).'" ');
+		}
 			//$criteria->addCondition('datakoniec < '.$now);		
 			//$criteria->addCondition('datakoniec<'. date('yyyy-mm-dd', strtotime('now')));
 			//$criteria->addCondition(time('datakoniec').'<'. date('U', strtotime('now')));
 			//$criteria->compare('datakoniec','<'. date('yyyy-mm-dd', strtotime('now')), true);
 			//$criteria->compare('datakoniec',date('yyyy-mm-dd', strtotime('now')), false,'<');
-			$criteria->addCondition('data = "'.date('Y-m-d', strtotime('now +'.$daymore.' days')).'" 
-');
+			
 			$criteria->with[]='idFilmu0';
 			$criteria->order = 'idFilmu0.tytul ASC';
 			//ddoac kryterium od godziny!

@@ -16,7 +16,7 @@
 		$models = Seans::model()->findAll();
 		$data = array();
 		foreach ($models as $m) {
-			if(strtotime($m->data)>time()-30*60){ // mozna dodawac/edytowac tylko dla seansow rozpoczetych max 30min temu
+			if(strtotime($m->data.' '.$m->godzina)>time()-30*60){ // mozna dodawac/edytowac tylko dla seansow rozpoczetych max 30min temu
 			$data[$m->idSeansu] = $m->data . ' '. $m->godzina . ' ' .$m->idFilmu0->tytul;  
 			}   
 		}

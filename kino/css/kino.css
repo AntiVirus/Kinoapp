@@ -38,6 +38,9 @@ select { background:#00AEEF; color:#FFF; margin:5px; padding:10px; font-weight:b
 #menulogin li a { margin-left:15px; font-weight:bold; padding:10px;text-shadow: 1px 1px 0px #DDD;}
 #menulogin li a:hover {background:#00AEEF; color:#FFF; text-decoration:none; text-shadow:none;}
 
+#daylist a {font-weight:bold;}
+#daylist a:hover {background:#00AEEF; color:#FFF; text-decoration:none;}
+
 #sciezka { font-size:20px; padding:20px;}
 #sciezka span { font-size:0.9em; }
 
